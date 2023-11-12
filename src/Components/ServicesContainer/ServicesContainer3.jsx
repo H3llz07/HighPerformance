@@ -86,7 +86,7 @@ const ServicesContainer3 = () => {
                   >
                     <Row>
                       <div>
-                        <h1>Services we offer!</h1>
+                        <h1>Our services!</h1>
                       </div>
                     </Row>
                   </Col>
