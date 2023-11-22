@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeContainer from "./Components/HomeContainer/HomeContainer";
 import ContactContainer from "./Components/ContactContainer/ContactContainer";
 import WhyContainer from "./Components/WhyContainer/WhyContainer";
-import InsuranceContainer2 from "./Components/InsuranceContainer/InsuranceContainer2";
 import ServicesContainer3 from "./Components/ServicesContainer/ServicesContainer3";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route path="/" element={<HomeContainer />} />
           <Route path="/why" element={<WhyContainer />} />
           <Route path="/services" element={<ServicesContainer3 />} />
-          <Route path="/insurance" element={<InsuranceContainer2 />} />
           <Route path="/contact" element={<ContactContainer />} />
 
           <Route path="/HighPerformance" element={<HomeContainer />} />
@@ -26,10 +24,6 @@ function App() {
           <Route
             path="/HighPerformance/services"
             element={<ServicesContainer3 />}
-          />
-          <Route
-            path="/HighPerformance/insurance"
-            element={<InsuranceContainer2 />}
           />
           <Route
             path="/HighPerformance/contact"

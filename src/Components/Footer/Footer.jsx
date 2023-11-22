@@ -2,55 +2,118 @@ import Styles from "./Footer.module.css";
 
 import { BsTelephone, BsEnvelope, BsClock, BsGeoAltFill } from "react-icons/bs";
 
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 const Footer = () => {
   return (
     <div>
-
       <footer>
-
-        <div className={Styles.contact}>
-            <div className={Styles.sections}>
-              <div className="pt-4 pr-4">
+        <Container fluid>
+          <Row
+            style={{
+              backgroundColor: "#af1616",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+            }}
+            className="sm:pr-4 md:pr-16 py-3 text-xl"
+          >
+            <Col
+              md={2}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div className="pr-4">
                 <BsTelephone />
               </div>
               <div>
-                <p style={{fontSize:"1.2rem"}}>CALL US <br /> (213)-858-8930</p>
+                <p>
+                  CALL US <br /> (213)-858-8930
+                </p>
               </div>
-            </div>
+            </Col>
 
-            <p>|</p>
+            <Col
+              md={1}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <p> | </p>
+            </Col>
 
-            <div className={Styles.sections}>
-              <div className="pt-4 pr-4">
+            <Col
+              md={2}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div className="pr-4">
                 <BsEnvelope />
               </div>
               <div>
-                <p style={{fontSize:"1.2rem"}}>EMAIL US <br /> sbuitrago@hpautoservices.com</p>
+                <p>
+                  EMAIL US <br /> sbuitrago@hpautoservices.com
+                </p>
               </div>
-            </div>
+            </Col>
 
-            <p>|</p>
+            <Col
+              md={1}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <p> | </p>
+            </Col>
 
-            <div className={Styles.sections}>
-              <div className="pt-4 pr-4">
+            <Col
+              md={2}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div className="pr-4">
                 <BsClock />
               </div>
               <div>
-                <p style={{fontSize:"1.2rem"}}>OPEN HOURS <br /> Mon - Fri: 8am - 5pm | Sat - Sun: Closed</p>
+                <p>
+                  OPEN HOURS <br /> Mon - Fri: 8am - 5pm Sat - Sun: Closed
+                </p>
               </div>
-            </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
 
         <div className={Styles.top}>
           <div className={Styles.pages}>
-
             <div className="mb-2">
               <BsGeoAltFill />
             </div>
 
-            <div style={{display:"flex", flexDirection:"column"}}>
-              <h3 style={{marginBottom:"1rem"}}>Visit us</h3>
-                <p style={{fontSize:"1.25rem"}}>9832 Rush St <br/> South El Monte, CA 91733</p>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <h3 style={{ marginBottom: "1rem" }}>Visit us</h3>
+              <p style={{ fontSize: "1.25rem" }}>
+                9832 Rush St <br /> South El Monte, CA 91733
+              </p>
             </div>
           </div>
         </div>
@@ -58,9 +121,8 @@ const Footer = () => {
           <div> &copy; 2023 HIGHPERFORMANCE CALIBRATIONS</div>
         </div>
       </footer>
-
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

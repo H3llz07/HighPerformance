@@ -40,7 +40,7 @@ const HomeContainer = () => {
           <Card.Body>
             <Card.Text
               style={{ position: "absolute", top: "200px", left: "250px" }}
-              className="text-4xl"
+              className="sm:text-2xl md:text-4xl sm:text-white md:text-black sm:bg-black md:bg-transparent p-4"
             >
               Slogan
             </Card.Text>
