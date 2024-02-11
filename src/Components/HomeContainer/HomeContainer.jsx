@@ -35,14 +35,11 @@ const HomeContainer = () => {
         >
           <Card.Img
             variant="bottom"
-            src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699750697/HighPerformance/posche_HighP_1_1_wob5re.jpg"
+            src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1706664943/HighPerformance/posche_HighP_1_1_wob5re_1_xoxzd5.jpg"
           />
           <Card.Body>
-            <Card.Text
-              style={{ position: "absolute", top: "200px", left: "250px" }}
-              className="sm:text-2xl md:text-4xl sm:text-white md:text-black sm:bg-black md:bg-transparent p-4"
-            >
-              Slogan
+            <Card.Text className="sm:text-xl md:text-3xl p-4 sm:ml-44 md:ml-20 text-center">
+              Driving Confidence, Calibrating Precision: Your ADAS Experts.
             </Card.Text>
             <Container fluid>
               <Col>
@@ -59,14 +56,14 @@ const HomeContainer = () => {
                   <Col
                     md={4}
                     style={{ color: "#ffffff" }}
-                    className="text-lg p-4"
+                    className="text-lg p-4 ml-4"
                   >
                     <p>
-                      {" "}
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nam deserunt autem, pariatur quam veritatis cum aperiam
-                      vero id earum sunt voluptates aut dignissimos rem unde
-                      ducimus necessitatibus, tempora amet veniam!{" "}
+                      Our team of highly skilled technicians boasts years of
+                      hands-on experience in Advanced Driver Assistance Systems
+                      (ADAS) calibrations. We pride ourselves on staying ahead
+                      of industry trends and maintaining a deep understanding of
+                      the latest technologies.
                     </p>
                   </Col>
                   <Col
@@ -84,14 +81,14 @@ const HomeContainer = () => {
                   <Col
                     md={4}
                     style={{ color: "#ffffff" }}
-                    className="text-lg p-4"
+                    className="text-lg p-4 mr-4"
                   >
                     <p>
-                      {" "}
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nam deserunt autem, pariatur quam veritatis cum aperiam
-                      vero id earum sunt voluptates aut dignissimos rem unde
-                      ducimus necessitatibus, tempora amet veniam!{" "}
+                      We understand the importance of getting your vehicle back
+                      on the road promptly. Our streamlined processes and
+                      efficient workflows enable us to provide quick turnaround
+                      times without compromising on the quality of our
+                      calibrations.
                     </p>
                   </Col>
                 </Row>
@@ -104,12 +101,14 @@ const HomeContainer = () => {
                   }}
                 >
                   <Col md="4" className="mr-8">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Necessitatibus facilis ipsa est molestiae cumque
-                      reprehenderit, sint quos ratione, fuga harum consequatur?
-                      Deleniti aliquam tempore velit perferendis, inventore
-                      temporibus mollitia blanditiis.
+                    <p className="text-2xl text-center font-semibold">
+                      COME AND VISIT US
+                    </p>
+                    <p className="text-lg">
+                      We understand the value of your time. With conveniently
+                      located service centers and flexible scheduling options,
+                      we strive to make the calibration process as hassle-free
+                      as possible for our customers.
                     </p>
                   </Col>
 
@@ -117,7 +116,7 @@ const HomeContainer = () => {
                     <Row className="mb-1 mx-1">
                       <Button variant="danger" href="HighPerformance/contact">
                         {" "}
-                        hi{" "}
+                        Book your visit!{" "}
                       </Button>
                     </Row>
                     <Row>
@@ -154,32 +153,47 @@ const HomeContainer = () => {
                     <Row>
                       <Carousel activeIndex={index} onSelect={handleSelect}>
                         <Carousel.Item>
-                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699750054/HighPerformance/posche_HighP_1_ochtlo.jpg" />
-                          <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>
-                              Nulla vitae elit libero, a pharetra augue mollis
-                              interdum.
+                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707621116/HighPerformance/traffic-sign-recognition-scaled-pe6vqli01yeabbmk18mrv77sitcqrucldm5capdoco_1_npg8se_3_gyh7zl.jpg" />
+                          <Carousel.Caption className="bg-stone-950/75">
+                            <h3>Traffic Sign Recognition</h3>
+                            <p className="text-xl">
+                              Traffic Sign Recognition (TSR) is an advanced
+                              driver assistance system (ADAS) that recognizes
+                              and relays traffic sign information to drivers via
+                              the instrument panel, multimedia, or heads-up
+                              display. In the United States, TSR systems can
+                              recognize speed limit signs, do not enter signs,
+                              and stop signs.
                             </p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699750054/HighPerformance/posche_HighP_1_ochtlo.jpg" />
-                          <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit.
+                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707621186/HighPerformance/Services/lane-departure-cover-MAIN_1_mqif8c_2_e9fvd7.jpg" />
+                          <Carousel.Caption className="bg-stone-950/75">
+                            <h3>Lane Departure Warning</h3>
+                            <p className="text-xl">
+                              Lane departure warning is designed to help you
+                              avoid crashes due to drifting or departing your
+                              lane. The system detects lane markers and alerts
+                              you when a tire touches a lane marker. The warning
+                              is usually a flashing indicator and/or it beeps
+                              from the corresponding side.
                             </p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699750054/HighPerformance/posche_HighP_1_ochtlo.jpg" />
-                          <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                              Praesent commodo cursus magna, vel scelerisque
-                              nisl consectetur.
+                          <Image src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707621262/HighPerformance/Services/maxresdefault_1_occy1f_1_j9pejc.jpg" />
+                          <Carousel.Caption className="bg-stone-950/75">
+                            <h3>Pedestrian Detection</h3>
+                            <p className="text-xl">
+                              Pedestrian detection is an advanced driver
+                              assistance system (ADAS). It uses sensors,
+                              cameras, and artificial intelligence to identify
+                              pedestrians near vehicles. By analyzing the
+                              surrounding environment, the system can recognize
+                              human forms and movements, helping to prevent or
+                              mitigate potential collisions between vehicles and
+                              pedestrians.
                             </p>
                           </Carousel.Caption>
                         </Carousel.Item>
