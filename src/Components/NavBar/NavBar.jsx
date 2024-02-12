@@ -7,11 +7,11 @@ import { BsInstagram, BsFacebook } from "react-icons/bs";
 const NavBar = () => {
   return (
     <div>
-      <Navbar expand="lg" bg="white">
+      <Navbar expand="lg" style={{ backgroundColor: "#ececec" }}>
         <Container>
           <Navbar.Brand href="/HighPerformance">
             <img
-              src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1700620928/HighPerformance/s8oasljxb7zori2vxkqc_1_1_krgiln.png"
+              src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707695717/HighPerformance/s8oasljxb7zori2vxkqc_1_1_krgiln-removebg-preview_cz8ve9.png"
               alt="Logo"
             />
           </Navbar.Brand>

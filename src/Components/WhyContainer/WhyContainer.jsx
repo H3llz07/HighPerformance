@@ -16,6 +16,7 @@ const WhyContainer = () => {
             width: "98%",
             display: "flex",
             alignItems: "center",
+            backgroundColor: "#ececec",
           }}
           className="p-4"
         >
@@ -88,9 +89,9 @@ const WhyContainer = () => {
 
                   <Col sm={12} lg={6}>
                     <Image
-                      src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699147686/HighPerformance/122587_2397_63886e83-9e66-493c-ab85-2c1e9725d2c4_1_ktouvz.jpg"
+                      src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707697477/HighPerformance/122587_2397_63886e83-9e66-493c-ab85-2c1e9725d2c4_1_ktouvz-removebg-preview_e6zm1k.png"
                       rounded
-                      className="sm:shadow-none lg:shadow-md lg:ml-16 sm:m-0"
+                      className=" lg:ml-16 sm:m-0"
                     />
                   </Col>
                 </Row>
@@ -133,9 +134,8 @@ const WhyContainer = () => {
                 >
                   <Col sm={12} lg={6}>
                     <Image
-                      src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1699147686/HighPerformance/122587_2397_63886e83-9e66-493c-ab85-2c1e9725d2c4_1_ktouvz.jpg"
+                      src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707697477/HighPerformance/122587_2397_63886e83-9e66-493c-ab85-2c1e9725d2c4_1_ktouvz-removebg-preview_e6zm1k.png"
                       rounded
-                      className="mb:shadow-none lg:shadow-md"
                     />
                   </Col>
                   <Col sm={12} lg={6}>

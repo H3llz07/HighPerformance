@@ -18,7 +18,7 @@ const ContactContainer = () => {
             display: "flex",
             alignItems: "center",
             padding: "1rem",
-            backgroundColor: "#fafafa",
+            backgroundColor: "#ececec",
           }}
         >
           <Card.Body>

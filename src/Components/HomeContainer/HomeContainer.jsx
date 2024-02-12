@@ -114,7 +114,10 @@ const HomeContainer = () => {
 
                   <Col md="4">
                     <Row className="mb-1 mx-1">
-                      <Button variant="danger" href="HighPerformance/contact">
+                      <Button
+                        style={{ backgroundColor: "#fd3131" }}
+                        href="HighPerformance/contact"
+                      >
                         {" "}
                         Book your visit!{" "}
                       </Button>

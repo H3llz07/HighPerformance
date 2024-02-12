@@ -68,6 +68,7 @@ const ServicesContainer3 = () => {
             width: "98%",
             display: "flex",
             alignItems: "center",
+            backgroundColor: "#ececec",
           }}
           className="p-4"
         >

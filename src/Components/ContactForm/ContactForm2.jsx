@@ -75,7 +75,15 @@ const ContactForm2 = () => {
                     <Form.Control as="textarea" rows={5} />
                   </Form.Group>
 
-                  <Button type="submit">Submit</Button>
+                  <Button
+                    type="submit"
+                    style={{
+                      backgroundColor: "#fd3131",
+                      borderColor: "#fd3131",
+                    }}
+                  >
+                    Submit
+                  </Button>
                 </Form>
               </Col>
             </Row>
