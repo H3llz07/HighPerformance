@@ -56,7 +56,7 @@ const HomeContainer = () => {
                   <Col
                     md={4}
                     style={{ color: "#ffffff" }}
-                    className="text-lg p-4 ml-4"
+                    className="text-2xl p-4 ml-4"
                   >
                     <p>
                       Our team of highly skilled technicians boasts years of
@@ -81,7 +81,7 @@ const HomeContainer = () => {
                   <Col
                     md={4}
                     style={{ color: "#ffffff" }}
-                    className="text-lg p-4 mr-4"
+                    className="text-2xl p-4 mr-4"
                   >
                     <p>
                       We understand the importance of getting your vehicle back
@@ -104,7 +104,7 @@ const HomeContainer = () => {
                     <p className="text-2xl text-center font-semibold">
                       COME AND VISIT US
                     </p>
-                    <p className="text-lg">
+                    <p className="text-xl">
                       We understand the value of your time. With conveniently
                       located service centers and flexible scheduling options,
                       we strive to make the calibration process as hassle-free
@@ -115,7 +115,10 @@ const HomeContainer = () => {
                   <Col md="4">
                     <Row className="mb-1 mx-1">
                       <Button
-                        style={{ backgroundColor: "#fd3131" }}
+                        style={{
+                          backgroundColor: "#fd3131",
+                          borderColor: "#fd3131",
+                        }}
                         href="HighPerformance/contact"
                       >
                         {" "}
@@ -222,7 +225,11 @@ const HomeContainer = () => {
                       variant="danger"
                       href="HighPerformance/contact"
                       size="lg"
-                      style={{ marginTop: "1rem" }}
+                      style={{
+                        marginTop: "1rem",
+                        backgroundColor: "#fd3131",
+                        borderColor: "#fd3131",
+                      }}
                     >
                       Contact us!
                     </Button>

@@ -13,7 +13,7 @@ const Footer = () => {
         <Container fluid>
           <Row
             style={{
-              backgroundColor: "#af1616",
+              backgroundColor: "#fd3131",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-evenly",
