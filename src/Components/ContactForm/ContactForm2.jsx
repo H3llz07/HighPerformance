@@ -5,7 +5,39 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 const ContactForm2 = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_jo9jlzm", "template_xha4ovl", form.current, {
+        publicKey: "8DhL2Lru_DJC067Ik",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+  const showSwal = () => {
+    withReactContent(Swal).fire({
+      title: <i>Your message has been sent!</i>,
+      icon: "success",
+    });
+  };
+
   return (
     <Container fluid>
       <Row>
@@ -42,13 +74,17 @@ const ContactForm2 = () => {
                   now!
                 </h1>
 
-                <Form>
+                <Form ref={form} onSubmit={sendEmail}>
                   <FloatingLabel
                     controlId="floatingInput"
                     label="Name"
                     className="mb-3"
                   >
-                    <Form.Control type="text" placeholder="Name" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Name"
+                      name="user_name"
+                    />
                   </FloatingLabel>
 
                   <FloatingLabel
@@ -56,7 +92,23 @@ const ContactForm2 = () => {
                     label="Email address"
                     className="mb-3"
                   >
-                    <Form.Control type="email" placeholder="Email Adress" />
+                    <Form.Control
+                      type="email"
+                      placeholder="Email Adress"
+                      name="user_email"
+                    />
+                  </FloatingLabel>
+
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Phone Number"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      type="text"
+                      placeholder="Phone Number"
+                      name="user_phone"
+                    />
                   </FloatingLabel>
 
                   <FloatingLabel
@@ -64,7 +116,11 @@ const ContactForm2 = () => {
                     label="Subject"
                     className="mb-3"
                   >
-                    <Form.Control type="text" placeholder="Subject" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Subject"
+                      name="subject"
+                    />
                   </FloatingLabel>
 
                   <Form.Group
@@ -72,7 +128,7 @@ const ContactForm2 = () => {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label> Your message here! </Form.Label>
-                    <Form.Control as="textarea" rows={5} />
+                    <Form.Control as="textarea" rows={5} name="message" />
                   </Form.Group>
 
                   <Button
@@ -81,6 +137,8 @@ const ContactForm2 = () => {
                       backgroundColor: "#fd3131",
                       borderColor: "#fd3131",
                     }}
+                    value="send"
+                    onClick={showSwal}
                   >
                     Submit
                   </Button>
