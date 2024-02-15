@@ -24,6 +24,7 @@ const ContactForm2 = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -84,6 +85,7 @@ const ContactForm2 = () => {
                       type="text"
                       placeholder="Name"
                       name="user_name"
+                      required
                     />
                   </FloatingLabel>
 
@@ -96,6 +98,7 @@ const ContactForm2 = () => {
                       type="email"
                       placeholder="Email Adress"
                       name="user_email"
+                      required
                     />
                   </FloatingLabel>
 
@@ -108,6 +111,7 @@ const ContactForm2 = () => {
                       type="text"
                       placeholder="Phone Number"
                       name="user_phone"
+                      required
                     />
                   </FloatingLabel>
 
@@ -120,6 +124,7 @@ const ContactForm2 = () => {
                       type="text"
                       placeholder="Subject"
                       name="subject"
+                      required
                     />
                   </FloatingLabel>
 
@@ -128,7 +133,12 @@ const ContactForm2 = () => {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label> Your message here! </Form.Label>
-                    <Form.Control as="textarea" rows={5} name="message" />
+                    <Form.Control
+                      as="textarea"
+                      rows={5}
+                      name="message"
+                      required
+                    />
                   </Form.Group>
 
                   <Button
