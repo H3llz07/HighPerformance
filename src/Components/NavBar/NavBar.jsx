@@ -1,7 +1,9 @@
+"use client";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { BsInstagram, BsFacebook } from "react-icons/bs";
 
 const NavBar = () => {
@@ -9,7 +11,7 @@ const NavBar = () => {
     <div>
       <Navbar expand="lg" style={{ backgroundColor: "#ececec" }}>
         <Container>
-          <Navbar.Brand href="/HighPerformance">
+          <Navbar.Brand as={Link} href="/">
             <img
               src="https://res.cloudinary.com/duqtm5tnb/image/upload/v1707695717/HighPerformance/s8oasljxb7zori2vxkqc_1_1_krgiln-removebg-preview_cz8ve9.png"
               alt="Logo"
@@ -22,7 +24,7 @@ const NavBar = () => {
               style={{ fontSize: "1.15rem", display: "flex", gap: "50px" }}
             >
               <Link
-                to="/"
+                href="/"
                 style={{
                   textDecoration: "none",
                   color: "black",
@@ -36,7 +38,7 @@ const NavBar = () => {
                 HOME{" "}
               </Link>
               <Link
-                to="/why"
+                href="/why"
                 style={{
                   textDecoration: "none",
                   color: "black",
@@ -50,7 +52,7 @@ const NavBar = () => {
                 US{" "}
               </Link>
               <Link
-                to="/services"
+                href="/services"
                 style={{
                   textDecoration: "none",
                   color: "black",
@@ -64,7 +66,7 @@ const NavBar = () => {
                 SERVICES{" "}
               </Link>
               <Link
-                to="/contact"
+                href="/contact"
                 style={{
                   textDecoration: "none",
                   color: "black",

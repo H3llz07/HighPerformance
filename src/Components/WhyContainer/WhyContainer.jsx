@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";

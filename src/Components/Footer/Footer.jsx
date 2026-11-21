@@ -1,3 +1,5 @@
+"use client";
+
 import Styles from "./Footer.module.css";
 
 import { BsTelephone, BsEnvelope, BsClock, BsGeoAltFill } from "react-icons/bs";
@@ -9,7 +11,7 @@ import Col from "react-bootstrap/Col";
 const Footer = () => {
   return (
     <div>
-      <footer>
+      <footer className={Styles.footer}>
         <Container fluid>
           <Row
             style={{

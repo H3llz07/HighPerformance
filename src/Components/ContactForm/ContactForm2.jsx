@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,7 +8,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -14,29 +15,18 @@ import withReactContent from "sweetalert2-react-content";
 const ContactForm2 = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("service_jo9jlzm", "template_xha4ovl", form.current, {
-        publicKey: "8DhL2Lru_DJC067Ik",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
-
   const showSwal = () => {
     withReactContent(Swal).fire({
       title: <i>Your message has been sent!</i>,
       icon: "success",
     });
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    // TODO: Connect to Next.js Route Handler (/api/contact) powered by Resend
+    form.current?.reset();
+    showSwal();
   };
 
   return (
@@ -62,9 +52,9 @@ const ContactForm2 = () => {
                   width="400"
                   height="300"
                   style={{ border: "0" }}
-                  allowfullscreen=""
+                  allowFullScreen
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerPolicy="no-referrer-when-downgrade"
                   title="map"
                 ></iframe>
               </Col>
@@ -148,7 +138,6 @@ const ContactForm2 = () => {
                       borderColor: "#fd3131",
                     }}
                     value="send"
-                    onClick={showSwal}
                   >
                     Submit
                   </Button>

@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "react-bootstrap/Card";
 import ContactForm2 from "../ContactForm/ContactForm2";
 

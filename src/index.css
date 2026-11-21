@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url("hover-min.css");
+@import "tailwindcss";
+@import "./hover-min.css";
 
 * {
   margin: 0;
